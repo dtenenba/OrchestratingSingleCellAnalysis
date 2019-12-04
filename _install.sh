@@ -46,6 +46,10 @@ R --no-save --slave -e "valid <- BiocManager::valid('$LIBLOC'); if (identical(va
 ## Install some Bioc packages manually
 R --no-save --slave -e "BiocManager::install('GO.db', lib = '$LIBLOC', version = '$BIOCVERSION')"
 
+## scater does not declare this dependency properly:
+R --no-save --slave -e "BiocManager::install('Rtsne', lib = '$LIBLOC', version = '$BIOCVERSION')"
+
+
 
 ###################################################
 ## Install OSCAUtils (package inside OSCABase)
