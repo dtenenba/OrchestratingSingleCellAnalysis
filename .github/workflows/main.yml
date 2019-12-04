@@ -22,6 +22,5 @@ jobs:
           IMAGE_NAME: "${{ secrets.DOCKER_ORG }}/osca"
           TAG_NAME: "v0.0.1" # TODO use date or sha1?
           LATEST: "true"
-
       - name: Print a string
         run: echo here is a string
