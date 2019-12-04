@@ -1,11 +1,14 @@
 #!/bin/bash
 
+set -e
+set -x
+
 base=OSCABase
 
 ## NOTE: To build clean, run `make clean` (or run _cron.sh)
 
 ## Update the local repo `OrchestratingSingleCellAnalysis`
-git pull
+# git pull
 
 # Updating the submodule remotes of `OSCABase`
 ## git submodule add git@github.com:Bioconductor/OSCABase.git
@@ -13,7 +16,7 @@ git submodule update --init
 git submodule update --remote
 
 # Clone the logs storage repo
-git clone git@github.com:robertamezquita/OSCAlogs.git
+git clone https://github.com/robertamezquita/OSCAlogs.git
 
 
 ###################################################

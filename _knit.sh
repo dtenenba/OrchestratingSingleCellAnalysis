@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -x
+set -e
+
 # Follows from updating the book and pulling it (_update.sh)
 
 ###################################################

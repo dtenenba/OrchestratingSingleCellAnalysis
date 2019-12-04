@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -x
+set -e
+
 ## Update online book and build logs -------------------------------------------
 # There had better be nothing in 'docs' that is not meant to be added!
 git add docs/

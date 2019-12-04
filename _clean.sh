@@ -1,18 +1,22 @@
 #!/bin/bash
 
+set -x
+set -e
+
+
 ## Remove intermediate build files
-rm -R P*_W*.*
-rm -Rf docs
-rm index.*
-rm -Rf _bookdown_files
-rm -Rf raw_data
-rm -Rf workflow workflows
-rm render*.rds
-rm OSCA.rds
-rm -Rf cache
-rm -Rf figure
-rm -Rf logs
-rm -Rf OSCAlogs
+# rm -R P*_W*.*
+# rm -Rf docs
+# rm index.*
+# rm -Rf _bookdown_files
+# rm -Rf raw_data
+# rm -Rf workflow workflows
+# rm render*.rds
+# rm OSCA.rds
+# rm -Rf cache
+# rm -Rf figure
+# rm -Rf logs
+# rm -Rf OSCAlogs
 ## rm -Rf OSCABase
 
 ## Recreate docs folder; re-add CNAME
@@ -23,4 +27,4 @@ echo "osca.bioconductor.org" > docs/CNAME
 mkdir -p logs
 
 ## Accidental cluster builds logs
-rm slurm*.out
+# rm slurm*.out

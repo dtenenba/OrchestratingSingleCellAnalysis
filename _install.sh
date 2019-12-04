@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e
+set -x
+
+
 ## Write the DESCRIPTION file and install/update libraries used throughout the book
 
 BASE=OSCABase

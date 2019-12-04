@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -x
+set -e
+
 ## Transfer logs over to the OSCAlogs dir and push
 cp logs/* OSCAlogs
 cd OSCAlogs

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+set -x
+set -e
+
 ## adapted from: https://github.com/rstudio/bookdown/blob/master/inst/examples/Makefile
 ## adapted from: https://github.com/Bioconductor/BiocWorkshops2019/blob/master/_build.sh
 
